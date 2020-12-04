@@ -17,6 +17,10 @@ public class 斐波那契数列动态规划解法 {
     }
 
     public static void main(String[] args) {
-        System.out.println(solution(3));
+        long start = System.currentTimeMillis();
+        System.out.println(solution(30));
+        long end = System.currentTimeMillis();
+        System.out.println(start);
+        System.out.println(end);
     }
 }
