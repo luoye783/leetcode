@@ -1,3 +1,7 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
 public class 查找第K大的数字 {
     public static int solution(int[] arrays,int start,int end,int target){
         if (target>arrays.length){
@@ -31,8 +35,18 @@ public class 查找第K大的数字 {
     }
 
     public static void main(String[] args) {
+
         int[] arry = new int[]{3,2,1,5,7,0,10,22,3,1,0,33,34,16,10};
 
-        System.out.println(solution(arry,0,arry.length-1,22));
+        System.out.println(solution(arry,0,arry.length-1,11));
+
+
+        Integer[] arry1 = new Integer[]{3,2,1,5,7,0,10,22,3,1,0,33,34,16,10};
+        List<Integer> t = Arrays.asList(arry1);
+        Collections.sort(t);
+        for (int sa:t
+             ) {
+            System.out.println(sa);
+        }
     }
 }
